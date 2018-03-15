@@ -1,0 +1,61 @@
+.cellActive{
+    border-left-color: red !important;
+}
+
+.box{
+    float: left;
+}
+
+.nextCellActive{
+    border-left-color: red !important;
+}
+
+.rowActive{
+    border-top-color: blue !important;
+}
+
+.nextRowActive{
+    border-top-color: blue !important;
+}
+
+.row{
+    overflow: hidden;
+}
+.cell{
+    border-left: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    cursor: pointer;
+    text-align: center;
+}
+
+.box:last-child .cell{
+    border-right: solid 1px #ccc;
+}
+
+.row:last-child .cell{
+    border-bottom: solid 1px #ccc;
+}
+
+.row:last-child .cellActive{
+    border-bottom-color: red !important;
+}
+
+.row:first-child .cellActive{
+    border-top-color: red !important;
+}
+
+.box:last-child .cellActive{
+    border-right-color: red !important;
+}
+
+.row:last-child .rowActive{
+    border-bottom-color: blue !important;
+}
+
+.box:last-child .rowActive{
+    border-right-color: blue !important;
+}
+
+.box:first-child .rowActive{
+    border-left-color: blue !important;
+}
